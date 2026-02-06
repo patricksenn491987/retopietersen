@@ -1,0 +1,27 @@
+﻿backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "products"
+    label: "Produkte"
+    file: "public/data/products.json"
+    format: "json"
+    editor:
+      preview: false
+    fields:
+      - label: "Produkte"
+        name: "items"
+        widget: "list"
+        summary: "{{fields.name}}"
+        fields:
+          - { label: "ID", name: "id", widget: "string" }
+          - { label: "Name", name: "name", widget: "string" }
+          - { label: "Kategorie", name: "category", widget: "string" }
+          - { label: "Beschreibung", name: "description", widget: "string" }
+          - { label: "Preis (CHF)", name: "price", widget: "number", value_type: "float" }
+          - { label: "Bild", name: "image", widget: "image" }
+          - { label: "Featured", name: "featured", widget: "boolean", default: false }

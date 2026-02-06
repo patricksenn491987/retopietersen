@@ -1,0 +1,76 @@
+﻿{
+  "items": [
+    {
+      "id": "streamline-wobbler",
+      "name": "Streamline Wobbler",
+      "category": "Wobbler",
+      "description": "Handlackiert, stabiler Lauf fuer klare Baeche.",
+      "price": 111,
+      "image": "/foodmart/images/fishing-lure-1.svg",
+      "featured": true
+    },
+    {
+      "id": "river-spoon",
+      "name": "River Spoon",
+      "category": "Spoon",
+      "description": "Leichtlauf fuer Bach, schnelles Absinken.",
+      "price": 111,
+      "image": "/foodmart/images/fishing-lure-2.svg",
+      "featured": true
+    },
+    {
+      "id": "deep-creek-jig",
+      "name": "Deep Creek Jig",
+      "category": "Jig",
+      "description": "Fuer tiefe Spots, sauberes Feedback an der Rute.",
+      "price": 111,
+      "image": "/foodmart/images/fishing-hook-1.svg",
+      "featured": true
+    },
+    {
+      "id": "quiet-lake-float",
+      "name": "Quiet Lake Float",
+      "category": "Pose",
+      "description": "Sensibel im Standwasser, gut sichtbar.",
+      "price": 111,
+      "image": "/foodmart/images/fishing-float-1.svg",
+      "featured": true
+    },
+    {
+      "id": "forest-wobbler",
+      "name": "Forest Wobbler",
+      "category": "Wobbler",
+      "description": "Dunkle Gewaesser, ruhiger Lauf.",
+      "price": 111,
+      "image": "/foodmart/images/fishing-lure-1.svg",
+      "featured": false
+    },
+    {
+      "id": "alpine-spoon",
+      "name": "Alpine Spoon",
+      "category": "Spoon",
+      "description": "Bergbach Setup, schnell und stabil.",
+      "price": 111,
+      "image": "/foodmart/images/fishing-lure-2.svg",
+      "featured": false
+    },
+    {
+      "id": "night-creek-jig",
+      "name": "Night Creek Jig",
+      "category": "Jig",
+      "description": "Nachtangeln, hohes Gewicht.",
+      "price": 111,
+      "image": "/foodmart/images/fishing-hook-1.svg",
+      "featured": false
+    },
+    {
+      "id": "light-stream-float",
+      "name": "Light Stream Float",
+      "category": "Pose",
+      "description": "Feines Setup fuer langsames Wasser.",
+      "price": 111,
+      "image": "/foodmart/images/fishing-float-1.svg",
+      "featured": false
+    }
+  ]
+}
