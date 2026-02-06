@@ -3,18 +3,18 @@
 
   const renderProductCard = (product) => {
     return `
-      <div class="col">
-        <div class="product-item">
-          <div class="product-thumb">
-            <img src="${product.image}" alt="${product.name}">
-          </div>
-          <span class="qty">${product.category}</span>
-          <h3>${product.name}</h3>
-          <p class="text-body-secondary mb-2">${product.description}</p>
-          <span class="price">${formatCHF(product.price)}</span>
-          <button class="btn btn-primary w-100 mt-3">In den Warenkorb</button>
+      <article class="card reveal">
+        <div class="product-meta">
+          <span>${product.name}</span>
+          <strong>${formatCHF(product.price)}</strong>
         </div>
-      </div>
+        <img src="${product.image}" alt="${product.name}" class="product-image" />
+        <p>${product.description}</p>
+        <div class="tag">${product.category}</div>
+        <div class="hero-actions">
+          <button class="btn primary">In den Warenkorb</button>
+        </div>
+      </article>
     `;
   };
 

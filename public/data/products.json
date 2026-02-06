@@ -6,7 +6,7 @@
       "category": "Wobbler",
       "description": "Handlackiert, stabiler Lauf fuer klare Baeche.",
       "price": 111,
-      "image": "/foodmart/images/fishing-lure-1.svg",
+      "image": "/uploads/lure.svg",
       "featured": true
     },
     {
@@ -15,7 +15,7 @@
       "category": "Spoon",
       "description": "Leichtlauf fuer Bach, schnelles Absinken.",
       "price": 111,
-      "image": "/foodmart/images/fishing-lure-2.svg",
+      "image": "/uploads/spoon.svg",
       "featured": true
     },
     {
@@ -24,7 +24,7 @@
       "category": "Jig",
       "description": "Fuer tiefe Spots, sauberes Feedback an der Rute.",
       "price": 111,
-      "image": "/foodmart/images/fishing-hook-1.svg",
+      "image": "/uploads/jig.svg",
       "featured": true
     },
     {
@@ -33,7 +33,7 @@
       "category": "Pose",
       "description": "Sensibel im Standwasser, gut sichtbar.",
       "price": 111,
-      "image": "/foodmart/images/fishing-float-1.svg",
+      "image": "/uploads/float.svg",
       "featured": true
     },
     {
@@ -42,7 +42,7 @@
       "category": "Wobbler",
       "description": "Dunkle Gewaesser, ruhiger Lauf.",
       "price": 111,
-      "image": "/foodmart/images/fishing-lure-1.svg",
+      "image": "/uploads/lure.svg",
       "featured": false
     },
     {
@@ -51,7 +51,7 @@
       "category": "Spoon",
       "description": "Bergbach Setup, schnell und stabil.",
       "price": 111,
-      "image": "/foodmart/images/fishing-lure-2.svg",
+      "image": "/uploads/spoon.svg",
       "featured": false
     },
     {
@@ -60,7 +60,7 @@
       "category": "Jig",
       "description": "Nachtangeln, hohes Gewicht.",
       "price": 111,
-      "image": "/foodmart/images/fishing-hook-1.svg",
+      "image": "/uploads/jig.svg",
       "featured": false
     },
     {
@@ -69,7 +69,7 @@
       "category": "Pose",
       "description": "Feines Setup fuer langsames Wasser.",
       "price": 111,
-      "image": "/foodmart/images/fishing-float-1.svg",
+      "image": "/uploads/float.svg",
       "featured": false
     }
   ]
