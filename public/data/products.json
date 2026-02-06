@@ -7,6 +7,13 @@
       "description": "Handlackiert, stabiler Lauf fuer klare Baeche.",
       "price": 111,
       "image": "/uploads/lure.svg",
+      "imageAlt": "Streamline Wobbler",
+      "sku": "SW-01",
+      "material": "Messingkern",
+      "weight": 9,
+      "length": 7,
+      "stock": 12,
+      "active": true,
       "featured": true
     },
     {
@@ -16,6 +23,13 @@
       "description": "Leichtlauf fuer Bach, schnelles Absinken.",
       "price": 111,
       "image": "/uploads/spoon.svg",
+      "imageAlt": "River Spoon",
+      "sku": "RS-02",
+      "material": "Edelstahl",
+      "weight": 8,
+      "length": 6,
+      "stock": 10,
+      "active": true,
       "featured": true
     },
     {
@@ -25,6 +39,13 @@
       "description": "Fuer tiefe Spots, sauberes Feedback an der Rute.",
       "price": 111,
       "image": "/uploads/jig.svg",
+      "imageAlt": "Deep Creek Jig",
+      "sku": "DCJ-03",
+      "material": "Stahl",
+      "weight": 14,
+      "length": 5,
+      "stock": 8,
+      "active": true,
       "featured": true
     },
     {
@@ -34,6 +55,13 @@
       "description": "Sensibel im Standwasser, gut sichtbar.",
       "price": 111,
       "image": "/uploads/float.svg",
+      "imageAlt": "Quiet Lake Float",
+      "sku": "QLF-04",
+      "material": "Holz",
+      "weight": 6,
+      "length": 9,
+      "stock": 14,
+      "active": true,
       "featured": true
     },
     {
@@ -43,6 +71,13 @@
       "description": "Dunkle Gewaesser, ruhiger Lauf.",
       "price": 111,
       "image": "/uploads/lure.svg",
+      "imageAlt": "Forest Wobbler",
+      "sku": "FW-05",
+      "material": "Messingkern",
+      "weight": 10,
+      "length": 7,
+      "stock": 6,
+      "active": true,
       "featured": false
     },
     {
@@ -52,6 +87,13 @@
       "description": "Bergbach Setup, schnell und stabil.",
       "price": 111,
       "image": "/uploads/spoon.svg",
+      "imageAlt": "Alpine Spoon",
+      "sku": "AS-06",
+      "material": "Edelstahl",
+      "weight": 7,
+      "length": 6,
+      "stock": 9,
+      "active": true,
       "featured": false
     },
     {
@@ -61,6 +103,13 @@
       "description": "Nachtangeln, hohes Gewicht.",
       "price": 111,
       "image": "/uploads/jig.svg",
+      "imageAlt": "Night Creek Jig",
+      "sku": "NCJ-07",
+      "material": "Stahl",
+      "weight": 16,
+      "length": 5,
+      "stock": 4,
+      "active": true,
       "featured": false
     },
     {
@@ -70,6 +119,13 @@
       "description": "Feines Setup fuer langsames Wasser.",
       "price": 111,
       "image": "/uploads/float.svg",
+      "imageAlt": "Light Stream Float",
+      "sku": "LSF-08",
+      "material": "Holz",
+      "weight": 5,
+      "length": 8,
+      "stock": 11,
+      "active": true,
       "featured": false
     }
   ]
