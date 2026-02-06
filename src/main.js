@@ -31,7 +31,7 @@ const renderCart = () => {
     row.innerHTML = `
       <div>
         <strong>${item.name}</strong>
-        <div class="muted small">${formatPrice(item.price)} · x${item.qty}</div>
+        <div class="muted small">${formatPrice(item.price)}  x${item.qty}</div>
       </div>
       <button class="icon-btn" data-remove-id="${item.id}">Entfernen</button>
     `;
@@ -51,6 +51,12 @@ const addToCart = (product) => {
   }
   setCart(cart);
   updateCartBadge();
+
+// Sync cart updates from other scripts
+document.addEventListener("cart:updated", () => {
+  updateCartBadge();
+  renderCart();
+});
   renderCart();
 };
 

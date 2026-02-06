@@ -643,3 +643,14 @@ h3 {
     grid-template-columns: 1fr;
   }
 }
+
+.search-input {
+  width: min(520px, 100%);
+  padding: 0.7rem 0.9rem;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  font: inherit;
+  background: #fff;
+  margin-bottom: 1.2rem;
+}
+

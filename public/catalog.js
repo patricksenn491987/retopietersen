@@ -34,9 +34,53 @@
     }
 
     const allWrap = document.querySelector('[data-products-grid]');
-    if (allWrap) {
-      allWrap.innerHTML = activeItems.map(renderProductCard).join('');
+    if (!allWrap) return;
+
+    const filtersWrap = document.querySelector('[data-filters]');
+    const searchInput = document.querySelector('[data-search]');
+
+    const categories = ['Alle', ...new Set(activeItems.map((item) => item.category))];
+    let currentFilter = 'Alle';
+    let searchValue = '';
+
+    const draw = () => {
+      const filtered = activeItems.filter((item) => {
+        const matchesCategory = currentFilter === 'Alle' || item.category === currentFilter;
+        const matchesSearch = !searchValue || item.name.toLowerCase().includes(searchValue) || item.description.toLowerCase().includes(searchValue);
+        return matchesCategory && matchesSearch;
+      });
+      allWrap.innerHTML = filtered.map(renderProductCard).join('');
+    };
+
+    if (filtersWrap) {
+      filtersWrap.innerHTML = categories
+        .map(
+          (cat, index) =>
+            `<button class="filter-btn${index === 0 ? ' active' : ''}" data-filter="${cat}">${cat}</button>`
+        )
+        .join('');
+
+      filtersWrap.addEventListener('click', (event) => {
+        const target = event.target;
+        if (!(target instanceof HTMLElement)) return;
+        const filter = target.getAttribute('data-filter');
+        if (!filter) return;
+        currentFilter = filter;
+        filtersWrap.querySelectorAll('.filter-btn').forEach((btn) => btn.classList.remove('active'));
+        target.classList.add('active');
+        draw();
+      });
     }
+
+    if (searchInput) {
+      searchInput.addEventListener('input', (event) => {
+        const value = event.target.value || '';
+        searchValue = value.toLowerCase().trim();
+        draw();
+      });
+    }
+
+    draw();
   };
 
   mount();
