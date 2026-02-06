@@ -1,0 +1,84 @@
+﻿<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Produkt · Reto Pietersen</title>
+    <meta
+      name="description"
+      content="Produktdetails zu handgemachten Angelkoedern von Reto Pietersen."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700&family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <a class="logo" href="/">Reto Pietersen</a>
+        <nav class="nav">
+          <a href="/">Home</a>
+          <a href="/shop.html">Shop</a>
+          <a href="/kontakt.html">Kontakt</a>
+        </nav>
+        <div class="nav-actions">
+          <button class="icon-btn" data-cart-open>
+            Warenkorb <span class="cart-badge" data-cart-count>0</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="product-detail">
+      <section class="container">
+        <div class="product-detail-grid" data-product-detail>
+          <div class="product-detail-image skeleton"></div>
+          <div class="product-detail-info">
+            <p class="eyebrow">Produkt</p>
+            <h1>Laden...</h1>
+            <p class="lead">Bitte warten</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <strong>Reto Pietersen</strong>
+          <p class="muted">Handgemachte Angelprodukte.</p>
+        </div>
+        <div>
+          <p class="muted">Kontakt</p>
+          <p>hello@reto-pietersen.ch</p>
+          <p>+41 00 000 00 00</p>
+        </div>
+        <div>
+          <a class="muted admin-link" href="/admin/" data-admin-link hidden>Admin Login</a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="cart-overlay" data-cart-overlay></div>
+    <aside class="cart-drawer" data-cart-drawer>
+      <div class="product-meta">
+        <strong>Warenkorb</strong>
+        <button class="icon-btn" data-cart-close>Schliessen</button>
+      </div>
+      <div class="cart-items" data-cart-items></div>
+      <div class="cart-total">
+        <span>Total</span>
+        <span data-cart-total>CHF 111</span>
+      </div>
+      <button class="btn primary">Anfrage senden</button>
+      <p class="muted small">Bestellung erfolgt nach Rueckmeldung.</p>
+    </aside>
+
+    <script type="module" src="/src/main.js"></script>
+    <script src="/product.js"></script>
+  </body>
+</html>

@@ -13,6 +13,7 @@
         <p>${product.description}</p>
         <div class="tag">${product.category}</div>
         <div class="hero-actions">
+          <a class="btn ghost" href="/produkt.html?id=${product.id}">Details</a>
           <button class="btn primary">In den Warenkorb</button>
         </div>
       </article>
