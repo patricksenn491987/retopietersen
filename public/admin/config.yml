@@ -8,27 +8,30 @@ public_folder: "/uploads"
 collections:
   - name: "products"
     label: "Produkte"
-    file: "public/data/products.json"
-    format: "json"
-    editor:
-      preview: false
-    fields:
-      - label: "Produkte"
-        name: "items"
-        widget: "list"
-        summary: "{{fields.name}}"
+    files:
+      - name: "products"
+        label: "Produkte"
+        file: "public/data/products.json"
+        format: "json"
+        editor:
+          preview: false
         fields:
-          - { label: "ID", name: "id", widget: "string" }
-          - { label: "Name", name: "name", widget: "string" }
-          - { label: "Kategorie", name: "category", widget: "string" }
-          - { label: "Beschreibung", name: "description", widget: "string" }
-          - { label: "Preis (CHF)", name: "price", widget: "number", value_type: "float" }
-          - { label: "Bild", name: "image", widget: "image" }
-          - { label: "Bild-Alt", name: "imageAlt", widget: "string", required: false }
-          - { label: "SKU", name: "sku", widget: "string", required: false }
-          - { label: "Material", name: "material", widget: "string", required: false }
-          - { label: "Gewicht (g)", name: "weight", widget: "number", required: false, value_type: "int" }
-          - { label: "Laenge (cm)", name: "length", widget: "number", required: false, value_type: "int" }
-          - { label: "Bestand", name: "stock", widget: "number", required: false, value_type: "int" }
-          - { label: "Aktiv", name: "active", widget: "boolean", default: true }
-          - { label: "Featured", name: "featured", widget: "boolean", default: false }
+          - label: "Produkte"
+            name: "items"
+            widget: "list"
+            summary: "{{fields.name}}"
+            fields:
+              - { label: "ID", name: "id", widget: "string" }
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Kategorie", name: "category", widget: "string" }
+              - { label: "Beschreibung", name: "description", widget: "string" }
+              - { label: "Preis (CHF)", name: "price", widget: "number", value_type: "float" }
+              - { label: "Bild", name: "image", widget: "image" }
+              - { label: "Bild-Alt", name: "imageAlt", widget: "string", required: false }
+              - { label: "SKU", name: "sku", widget: "string", required: false }
+              - { label: "Material", name: "material", widget: "string", required: false }
+              - { label: "Gewicht (g)", name: "weight", widget: "number", required: false, value_type: "int" }
+              - { label: "Laenge (cm)", name: "length", widget: "number", required: false, value_type: "int" }
+              - { label: "Bestand", name: "stock", widget: "number", required: false, value_type: "int" }
+              - { label: "Aktiv", name: "active", widget: "boolean", default: true }
+              - { label: "Featured", name: "featured", widget: "boolean", default: false }
